@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: midnightblue;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.low-stock-alert {
+  color: red;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.search-result {
+  margin-top: 8px;
+}
+.eligibility-result {
+  margin: 16px 0 12px 0;
+}
+.error-message {
+  color: red;
+  margin-left: 8px;
+}
+
+form {
+  background: lightsteelblue;
+  padding: 18px 24px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+form label {
+  margin-top: 8px;
+  display: block;
+}
+form input,
+form select {
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border: 1px solid lightsteelblue;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+form button {
+  margin-top: 8px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  background: midnightblue;
+  color: white;
+  cursor: pointer;
+}
+
+.beneficiary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+.beneficiary-table th,
+.beneficiary-table td {
+  text-align: left;
+  padding: 8px;
+}
+.beneficiary-table th {
+  background: rgb(214, 221, 231);
+  font-weight: 700;
+  text-align: center;
+}

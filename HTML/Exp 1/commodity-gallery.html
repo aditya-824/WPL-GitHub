@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commodity Gallery</title>
+</head>
+<body>
+    <div style="margin: 40px auto; padding: 24px; font-family: Arial, sans-serif;">
+        <h2>Commodity Image Gallery</h2>
+        <p>Click on a commodity to view details.</p>
+        <img src="rice.jpg" alt="Rice" usemap="#commodities" width="full" height="150" style="margin: 10px; border-radius: 8px;">
+        <img src="tea.jpg" alt="Tea" usemap="#commodities" width="full" height="150" style="margin: 10px; border-radius: 8px;">
+        <img src="coffee.jpg" alt="Coffee" usemap="#commodities" width="full" height="150" style="margin: 10px; border-radius: 8px;">
+
+        <map name="commodities">
+            <area shape="rect" coords="0,0,300,200" href="rice-details.html" alt="Rice Details">
+            <area shape="rect" coords="0,0,150,200" href="pulses-details.html" alt="Pulses Details">
+            <area shape="rect" coords="0,0,250,200" href="tea-details.html" alt="Tea Details">
+        </map>
+    </div>
+</body>
+</html>

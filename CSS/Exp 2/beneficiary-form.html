@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Beneficiary Form</title>
+</head>
+<body>
+    <header>Public Distribution System - Ration Shop Portal</header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="commodity-gallery.html">Stock</a></li>
+        <li><a href="beneficiary-form.html">Register</a></li>
+        <li><a href="beneficiary-category.html">Beneficiaries</a></li>
+        <li><a href="distribution-table.html">Distribution</a></li>
+        <li><a href="important-links.html">Reports</a></li>
+      </ul>
+    </nav>
+    <div class="beneficiary-form-container">
+        <h1>Beneficiary Registration Form</h1>
+        <form>
+            <label for="name"><strong>Name:</strong></label><br>
+            <input type="text" id="name" name="name" required class="form-input"><br>
+
+            <label for="card"><strong>Ration Card Number:</strong></label><br>
+            <input type="text" id="card" name="card" required class="form-input"><br>
+
+            <label for="family"><strong>Family Size:</strong></label><br>
+            <input type="number" id="family" name="family" min="1" required class="form-input"><br>
+
+            <label for="category"><strong>Category:</strong></label><br>
+            <select id="category" name="category" required class="form-input">
+                <option value="">--Select Category--</option>
+                <option value="AAY">Antyodaya</option>
+                <option value="BPL">BPL</option>
+                <option value="APL">APL</option>
+            </select><br>
+
+            <label for="address"><strong>Address:</strong></label><br>
+            <textarea id="address" name="address" rows="3" required class="form-input"></textarea><br>
+
+            <button type="submit" class="form-submit-btn">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>This is a government website.</p>
+      </footer>
+</body>
+</html>

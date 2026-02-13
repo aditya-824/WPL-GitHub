@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Commodity Gallery</title>
+</head>
+<body>
+    <header>Public Distribution System - Ration Shop Portal</header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="commodity-gallery.html">Stock</a></li>
+        <li><a href="beneficiary-form.html">Register</a></li>
+        <li><a href="beneficiary-category.html">Beneficiaries</a></li>
+        <li><a href="distribution-table.html">Distribution</a></li>
+        <li><a href="important-links.html">Reports</a></li>
+      </ul>
+    </nav>
+    <div class="commodity-gallery-container">
+        <h2>Commodity Image Gallery</h2>
+        <p>Click on a commodity to view details.</p>
+        <img src="rice.jpg" alt="Rice" usemap="#commodities" class="commodity-img">
+        <img src="tea.jpg" alt="Tea" usemap="#commodities" class="commodity-img">
+        <img src="coffee.jpg" alt="Coffee" usemap="#commodities" class="commodity-img">
+        <map name="commodities">
+            <area shape="rect" coords="0,0,300,200" href="rice-details.html" alt="Rice Details">
+            <area shape="rect" coords="0,0,150,200" href="pulses-details.html" alt="Pulses Details">
+            <area shape="rect" coords="0,0,250,200" href="tea-details.html" alt="Tea Details">
+        </map>
+    </div>
+    <footer>
+        <p>This is a government website.</p>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Gandhi</title>
+  </head>
+  <body onload="reloadData()" onresize="resizeData()">
+    <script>
+      username = "KJSCE";
+      console.log(username);
+      console.log("username");
+      console.log(typeof username);
+      console.log(typeof "username");
+      userAge = 20;
+      console.log(typeof userAge);
+      console.log(typeof document);
+
+      num1 = 10;
+      num2 = 20;
+      console.log(num1 + num2);
+      console.log(num1 % num2);
+
+      num1 = 10;
+      num2 = "20";
+      console.log(typeof num1);
+      console.log(typeof num2);
+      answer = num1 + num2;
+      console.log(answer);
+      console.log(typeof answer);
+
+      num1 = 5;
+      num2 = num1 * num2;
+      console.log(num2);
+      // answer = "Square of" + " " + num1 + " " + "is" + " " + num2;
+      answer = `Square of ${num1} is ${num2}`;
+      console.log(answer);
+
+      if (3 > 0) {
+        console.log("True");
+      } else {
+        console.log("False");
+      }
+
+      num = 10;
+      console.log(num);
+      console.log(typeof num);
+      if (num == 10) {
+        console.log("True");
+      }
+      if (num == "10") {
+        console.log("False");
+      }
+      if (num === 10) {
+        console.log("True");
+      }
+      if (num === "10") {
+        console.log("True");
+      } else {
+        console.log("False");
+      }
+
+      for (let i = 0; i < 5; i++) {
+        console.log(i);
+      }
+
+      username = ["John", "Jack"];
+      console.log(username);
+      username = new Array("Josh", "Jill");
+      console.log(username);
+      console.log(typeof username);
+
+      dob = [22, 2, 2000];
+      console.log(dob);
+      answer = dob.join("/");
+      console.log(answer);
+      console.log(typeof answer);
+
+      record = [10, 20, 30, 40, 50];
+      console.log(record);
+      record.push(60);
+      console.log(record);
+      record.pop();
+      console.log(record);
+
+      function myFunc() {
+        let x = 10;
+        let y = 20;
+        console.log(x + y);
+      }
+
+      function myFunc() {
+        let x = 100;
+        let y = 200;
+        console.log(x + y);
+      }
+
+      myFunc();
+      myFunc();
+      myFunc();
+
+      myvar = function() {
+        a = 10;
+        b = 20;
+        console.log(a + b);
+      }
+      console.log(myvar);
+      console.log(typeof(myvar));
+      myvar();
+
+      calc = () => {
+        i = 20;
+        j = 200;
+        console.log(i + j);
+      }
+      console.log(calc);
+      console.log(typeof(calc));
+      calc();
+    </script>
+
+    <button onClick="myfunc()">Enter</button>
+    <script>
+        function myfunc() {
+            console.log("Answer 1");
+        }
+
+        myfunc = function() {
+            console.log("Answer 2");
+        }
+
+        myfunc = () => {
+            console.log("Answer 3");
+        }
+    </script>
+
+    <p style="border: solid" onmouseover="calci1()" onmouseout="calci2()">Test</p>
+    <script>
+        function calci1() {
+            console.log("Mouse over");
+        }
+
+        function calci2() {
+            console.log("Mouse out");
+        }
+    </script>
+
+    <input type="text" onkeyup="recValue()" />
+    <script>
+        function recValue() {
+            console.log("Key up");
+        }
+    </script>
+
+    <script>
+        function reloadData() {
+            console.log("Page loaded");
+        }
+
+        function resizeData() {
+            console.log("Page resized");
+        }
+    </script>
+  </body>
+</html>

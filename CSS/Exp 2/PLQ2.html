@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Query Example</title>
+	<style>
+		.container {
+			width: 60%;
+			margin: 40px auto;
+			padding: 30px;
+			background:honeydew;
+		}
+		.responsive-box {
+			padding: 20px;
+			background:lightblue;
+			color: black;
+			margin-bottom: 20px;
+		}
+		@media (max-width: 768px) {
+			.container {
+				width: 90%;
+				padding: 10px;
+			}
+			.responsive-box {
+				font-size: 1rem;
+				padding: 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Media query example</h2>
+		<div class="responsive-box">Box 1 of the media query example.</div>
+		<div class="responsive-box">Box 2 of the media query example.</div>
+	</div>
+</body>
+</html>

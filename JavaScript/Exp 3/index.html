@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ration Shop & Beneficiary Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Ration Shop Information</h1>
+    <p class="info">Shop Name: <span id="shopName"></span></p>
+    <p class="info">Address: <span id="address"></span></p>
+    <p class="info">Dealer Name: <span id="dealerName"></span></p>
+    <p class="info">Contact: <span id="contact"></span></p>
+
+    <hr />
+
+    <h1>Beneficiary Details Form</h1>
+    <form id="beneficiaryForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="cardNumber">Ration Card Number:</label>
+      <input
+        type="text"
+        id="cardNumber"
+        name="cardNumber"
+        required
+      />
+      <span id="cardNumberError" class="error-message"></span><br />
+
+      <label for="familyMembers">Family Members:</label>
+      <input
+        type="number"
+        id="familyMembers"
+        name="familyMembers"
+        min="1"
+        required
+      /><br />
+
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="APL">APL</option>
+        <option value="BPL">BPL</option></select
+      ><br />
+
+      <button type="submit">Submit</button>
+       <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <div id="eligibilityResult" class="eligibility-result"></div>
+
+    <hr />
+
+    <h1>Beneficiary Details</h1>
+    <table
+      id="beneficiaryTable"
+      border="1"
+      class="beneficiary-table"
+    >
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Ration Card Number</th>
+          <th>Family Members</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <hr />
+
+    <div class="search-section">
+      <h1>Search</h1>
+      <p>Search Beneficiary by Ration Card Number</p>
+      <input type="text" id="searchCardNumber" placeholder="0123456789" maxlength="10" />
+      <button id="searchBtn">Search</button>
+      <span id="searchError" class="error-message"></span>
+      <div id="searchResult" class="search-result"></div>
+    </div>
+
+    <hr />
+
+    <div class="stock-section">
+      <h1>Current Stock</h1>
+      <ul>
+        <li>Rice: <span id="stockRice"></span> kg</li>
+        <li>Wheat: <span id="stockWheat"></span> kg</li>
+        <li>Sugar: <span id="stockSugar"></span> kg</li>
+      </ul>
+      <div id="lowStockAlert" class="low-stock-alert"></div>
+    </div>
+
+    <hr />
+
+    <div class="report-section">
+      <h1>Distribution Report</h2>
+      <table id="distributionReportTable" border="1" class="beneficiary-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Ration Card Number</th>
+            <th>Family Members</th>
+            <th>Category</th>
+            <th>Rice (kg)</th>
+            <th>Wheat (kg)</th>
+            <th>Sugar (kg)</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>

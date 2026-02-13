@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Gandhi</title>
+  </head>
+  <body style="background-color: ivory">
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: right;
+      }
+    </style>
+    <hr />
+    This is my first homepage
+    <hr />
+    <h1>Heading 1</h1>
+    <p>
+      This <br />
+      is a <br />
+      paragraph.
+    </p>
+    <p style="font-size: 160%; text-align: center">This is a paragraph.</p>
+    <pre style="background-color: olive; color: ivory; font-size: 120%">
+        My bonnie lies over the ocean.
+        My bornie lies over the sea.
+        My bonnie lies over the ocean.
+    </pre>
+    <!-- Text Formatting Tags -->
+    <p><b>Hello world</b></p>
+    <p><em>Hello world</em></p>
+    <p><small>Hello world</small></p>
+    <p><em><mark>Hello</mark>Hello <del>world</del></em></p>
+    <p>log<sub>10</sub>2</p>
+    <p>2<sup>3</sup></p>
+    <img src="forest.jpg" alt="Image of a forest" width="500" />
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <ul style="list-style-type: disc">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <li>Third item</li>
+    </ol>
+    <table style="width: 100%">
+      <caption>
+        My Table
+      </caption>
+      <tr>
+        <th>Table row 1</th>
+        <th>Table row 2</th>
+      </tr>
+      <tr>
+        <td>Data1</td>
+        <td>Data2</td>
+      </tr>
+    </table>
+    <table style="width: 100%">
+      <caption>
+        Table2
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>55577854</td>
+        <td>55577855</td>
+      </tr>
+    </table>
+    <iframe
+      height="200"
+      width="300"
+      srcdoc="<h3>HTML iframe</h3><p>This is an HTML iframe.</p>"
+    >
+    </iframe>
+    <div style="background-color: olive; color: ivory">
+      <h1>Div example</h1>
+      <p>Hello world</p>
+    </div>
+
+    <h2>POST Form</h2>
+    <form method="POST" target="_blank">
+      First name:<br />
+      <input type="text" name="firstname" value="John" />
+      <br />
+      Last name:<br />
+      <input type="text" name="lastname" value="Doe" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>GET Form</h2>
+    <form method="GET" target="_blank">
+      First name:<br />
+      <input type="text" name="firstname" value="John" />
+      <br />
+      Last name:<br />
+      <input type="text" name="lastname" value="Doe" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <form>
+      User ID : <input type="text" name="user_id" /> <br />
+      Password:
+      <input type="password" name="password" />
+      <br />
+      <input type="checkbox" name="Select 1" value="on" /> option 1
+      <input type="checkbox" name="Select 2" value="on" /> option 2
+      <input type="radio" name="Radio 1" value="on" /> option 1
+      <input type="radio" name="Radio 2" value="on" /> option 2
+    </form>
+    <br />
+    <audio controls src=""></audio>
+
+    <script>
+      num1 = 10;
+      num2 = "20";
+      username = "admin";
+      alert(username);
+      document.write("Hello " + username + "!");
+      console.log(typeof num1);
+      console.log(typeof num2);
+      console.log(num1 + num2);
+      console.log(typeof username);
+      console.log(typeof username);
+      console.log(typeof 12345);
+      console.log(typeof document);
+      answer = "Square of " + num1 + " is " + num1 * num1;
+      console.log(answer);
+      answer = `Square of ${num1} is ` + num1 * num1;
+      console.log(answer);
+
+      if (3 > 40) {
+        console.log("3 is greater than 40");
+      } else {
+        console.log("3 is not greater than 40");
+      }
+
+      num = 10;
+      console.log(num);
+      console.log(typeof num);
+      if (num == 10) {
+        console.log("Yes it is true");
+      } else if (num == "10") {
+        console.log("Yes it is true");
+      } else {
+        console.log("Wrong operation");
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficiary Form</title>
+</head>
+<body>
+    <div style="margin: 40px auto; padding: 24px; font-family: Arial, sans-serif;">
+        <h1>Beneficiary Registration Form</h1>
+        <form>
+            <label for="name"><strong>Name:</strong></label><br>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 14px; border-radius: 4px; border: 1px solid #ccc;"><br>
+
+            <label for="card"><strong>Ration Card Number:</strong></label><br>
+            <input type="text" id="card" name="card" required style="width: 100%; padding: 8px; margin-bottom: 14px; border-radius: 4px; border: 1px solid #ccc;"><br>
+
+            <label for="family"><strong>Family Size:</strong></label><br>
+            <input type="number" id="family" name="family" min="1" required style="width: 100%; padding: 8px; margin-bottom: 14px; border-radius: 4px; border: 1px solid #ccc;"><br>
+
+            <label for="category"><strong>Category:</strong></label><br>
+            <select id="category" name="category" required style="width: 100%; padding: 8px; margin-bottom: 14px; border-radius: 4px; border: 1px solid #ccc;">
+                <option value="">--Select Category--</option>
+                <option value="AAY">Antyodaya</option>
+                <option value="BPL">BPL</option>
+                <option value="APL">APL</option>
+            </select><br>
+
+            <label for="address"><strong>Address:</strong></label><br>
+            <textarea id="address" name="address" rows="3" required style="width: 100%; padding: 8px; margin-bottom: 18px; border-radius: 4px; border: 1px solid #ccc;"></textarea><br>
+
+            <button type="submit" style="padding: 10px 24px; border: none; border-radius: 6px; cursor: pointer;">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

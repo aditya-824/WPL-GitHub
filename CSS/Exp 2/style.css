@@ -1,0 +1,247 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f9ff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+}
+
+header {
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: #407aa5;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #082133;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #3e5a6b;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+}
+
+nav a:hover {
+  background: #17415c;
+  color: #e2d485;
+}
+
+.shop-info-card {
+  margin: 40px auto;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.23);
+  background: #f1f8ff;
+  border: 1.5px solid #d4d4d4;
+  text-align: left;
+}
+
+.shop-status-active {
+  color: #fff;
+  background: green;
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+ol li {
+  margin: 15px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.rice {
+  color: #5f5b42;
+}
+.pulses {
+  color: #842424;
+}
+.tea {
+  color: #21621f;
+}
+.coffee {
+  color: #17415c;
+}
+dl {
+  padding: 20px;
+  max-width: 500px;
+  background: #eeebf1;
+  border-radius: 0px;
+}
+dt {
+  color: #0e2b3c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+dd {
+  margin-bottom: 10px;
+  color: #6c6c6c;
+}
+
+.beneficiary-category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.beneficiary-category-item {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+.antyodaya {
+  background-color: #7e0e0e;
+}
+.bpl {
+  background-color: #074a68;
+}
+.apl {
+  background-color: #063f06;
+}
+.priority-badge {
+  color: #fff;
+  background: red;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.category-eligibility {
+  font-size: 0.8rem;
+  color: #e4e4e4;
+  margin-top: 5px;
+}
+
+.beneficiary-form-container {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 420px;
+  background: #f9fcff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.beneficiary-form-container h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #105e99;
+  text-align: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1.5px solid #98b1c0;
+  background: #fff;
+  box-sizing: border-box;
+}
+textarea.form-input {
+  min-height: 60px;
+  margin-bottom: 22px;
+}
+.form-submit-btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background: #104974;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  margin-top: 10px;
+}
+.form-submit-btn:hover {
+  background: #3d8dbf;
+  color: #ffde20;
+}
+
+.distribution-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  background: white;
+}
+.distribution-table th,
+.distribution-table td {
+  border: 1px solid #a5cbe0;
+  padding: 10px;
+  text-align: left;
+}
+.distribution-table thead {
+  background: #d3eaff;
+}
+.distribution-table tbody tr:nth-child(even) {
+  background-color: #eaeef1;
+}
+.distribution-caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.distribution-table-container {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 900px;
+}
+
+.commodity-gallery-container {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 900px;
+  text-align: center;
+}
+.commodity-img {
+  margin: 15px;
+  border-radius: 10px;
+  height: 150px;
+  width: 220px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  background: #f6faff;
+  border: 2px solid #e0e7ef;
+}
+.commodity-img:hover {
+  border: 3px solid #407aa5 !important;
+}
